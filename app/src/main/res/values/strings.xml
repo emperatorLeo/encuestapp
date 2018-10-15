@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name" translatable="false">Encuestapp</string>
+    <string name="user">User</string>
+    <string name="pass">Password</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="most_selected">The most selected category is: </string>
+
+    <!--Warnings -->
+    <string name="w_user">You have to write an user</string>
+    <string name="w_pass">You have to write a password</string>
+    <string name="w_recycler_empty">seems you don\'t have any poll recorded yet</string>
+
+    <!-- Labels -->
+    <string name="label_name">Name</string>
+    <string name="label_lastname">Last Name</string>
+    <string name="label_dni" translatable="false">DNI</string>
+    <string name="label_date">Date Birth</string>
+    <string name="label_email">Email</string>
+    <string name="label_categories">Categories</string>
+    <string name="label_description">Description...</string>
+</resources>

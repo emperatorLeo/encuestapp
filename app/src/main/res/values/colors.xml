@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkOrange">#ff7f00</color>
+    <color name="turquise">#26b98a</color>
+    <color name="darkOrchid">#6a5185</color>
+</resources>

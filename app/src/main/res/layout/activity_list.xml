@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="activity"
+            type="com.independenciatecnologica.encuestappdos.view.ActivityList"/>
+    </data>
+    <FrameLayout
+        android:id="@+id/list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.constraint.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+            <TextView
+                android:id="@+id/tv_selectedLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/most_selected"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/gravedigger"
+                android:paddingTop="5dp"
+                android:textColor="@color/turquise"
+                android:background="@android:color/white"
+                />
+            <LinearLayout
+                android:id="@+id/ll_categoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tv_selectedLabel"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:id="@+id/iv_mostSelectedImage"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:id="@+id/tv_mostSelectedName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_pollList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_categoryLayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="50dp"
+                android:background="@android:color/white"
+                tools:listitem="@layout/encuesta_item"
+                />
+            <!-- -->
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/poll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:backgroundTint="@color/turquise"
+                android:src="@drawable/ic_assignment_black_24dp"
+                />
+            <!-- android:onClick="@{()->activity.goToAdd()}"-->
+
+            <TextView
+                android:id="@+id/tv_placeHolder"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/w_recycler_empty"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="15sp"
+                android:textColor="@color/turquise"
+                android:fontFamily="@font/gravedigger"
+                app:layout_constraintVertical_bias="0.4"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+
+</layout>

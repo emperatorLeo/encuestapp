@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="most_selected">La categoria mas seleccionada es:  </string>
+
+    <!--Warnings -->
+    <string name="w_user">Debes escribir un usuario</string>
+    <string name="w_pass">Debes escribir una contraseña</string>
+    <string name="w_recycler_empty">parece que no tienes ninguna encuesta agregada</string>
+
+    <!-- Labels -->
+    <string name="label_name">Nombre</string>
+    <string name="label_lastname">Apellido</string>
+
+    <string name="label_date">Fecha de nacimiento</string>
+    <string name="label_email">Email</string>
+    <string name="label_categories">Categorias</string>
+    <string name="label_description">Descripcion...</string>
+</resources>
